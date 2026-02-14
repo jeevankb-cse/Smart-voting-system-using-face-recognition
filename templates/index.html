@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Smart Voting System</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <h1>Smart Voting System</h1>
+
+    <div class="container">
+        <div class="video-box">
+            <!-- video_feed shows the webcam preview -->
+            <img src="{{ url_for('video_feed') }}" id="videoStream" alt="Camera feed">
+        </div>
+
+        <div class="buttons">
+            <button class="bjp" onclick="startVote('BJP')">BJP</button>
+            <button class="congress" onclick="startVote('CONGRESS')">CONGRESS</button>
+            <button class="aap" onclick="startVote('AAP')">AAP</button>
+            <button class="nota" onclick="startVote('NOTA')">NOTA</button>
+        </div>
+
+        <p id="statusMsg">Press a party button — system will scan the face first.</p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

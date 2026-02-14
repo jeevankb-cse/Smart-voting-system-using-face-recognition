@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f9ff;
+    text-align: center;
+}
+
+h1 {
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+.container {
+    margin: 30px auto;
+    background: #fff;
+    width: 420px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-box img {
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+    border: 3px solid #007BFF;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.bjp { background-color: #FF9800; }
+.congress { background-color: #2196F3; }
+.aap { background-color: #1976D2; }
+.nota { background-color: #444; }
+
+#statusMsg {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
